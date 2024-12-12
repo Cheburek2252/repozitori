@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель Администратора</title>
+    <link rel="stylesheet" href="css/styless.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать, Администратор!</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="baza.php" style="color: white;">Управление пользователями</a></li>
+            <li><a href="view_reports.html" style="color: white;">Просмотр отчетов</a></li>
+            <li><a href="settings.html" style="color: white;">Настройки системы</a></li>
+            <li><a href="login.php" style="color: white;">Выйти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Обзор системы</h2>
+        <p>На этой панели вы можете управлять пользователями, просматривать отчеты и изменять настройки системы.</p>
+        
+        <section>
+            <h3>Недавние действия</h3>
+            <ul>
+                <li>Добавлен новый пользователь: Игорь Иванов</li>
+                <li>Удален пользователь: Анна Петрова</li>
+                <li>Создан отчет по поездкам за октябрь 2024</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Статистика пользователей</h3>
+            <p>Всего пользователей: <strong>150</strong></p>
+            <p>Активные пользователи: <strong>120</strong></p>
+            <p>Заблокированные пользователи: <strong>30</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Система управления — Все права защищены</p>
+    </footer>
+</body>
+</html>
